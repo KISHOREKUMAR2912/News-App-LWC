@@ -1,0 +1,20 @@
+.image{
+    width: 100%;
+    max-height: 150px;
+}
+.title{
+    font-size: medium;
+    font-style: italic;
+}
+.source{
+    font-size: medium;
+    font-family: Georgia, serif;
+}
+.link{
+    font-size: medium;
+    font-family: cursive;
+}
+.description{
+    font-size: medium;
+    font-weight: bold;
+}
