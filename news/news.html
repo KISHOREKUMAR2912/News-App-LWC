@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="NEWS APP" icon-name="standard:news">
+        <template if:false={isSelected}>
+            <div class="slds-var-m-around_small">
+                <lightning-combobox name="country" label="Select Country" value={countryValue} options={countryOptions} onchange={handleChange}></lightning-combobox>
+                <lightning-combobox name="category" label="Select Category" value={categoryValue} options={categoryOptions} onchange={handleChange}></lightning-combobox>
+            </div>
+            <div class="slds-var-m-around_small">
+                <lightning-button label="Get News" onclick={handleClick} variant="brand" class="slds-align_absolute-center"></lightning-button>
+            </div>
+        </template>
+        <template if:true={isSelected}>
+            <c-childnews news-array={arrayValues} onchild={handleChild}></c-childnews>
+        </template>
+    </lightning-card>
+</template>
